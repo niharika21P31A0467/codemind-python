@@ -1,9 +1,9 @@
-a=input()
-a=a.lower()
-brr=[]
+l=input().lower().split()
+s="".join(l)
+a='abcdefghijklmnopqrstuvwxyz'
+d=[]
 for i in a:
-  if a.count(i)==1 and i not in' ':
-     brr.append(i)
-crr=sorted(brr)
-for i in crr:
-  print(i,end="")
+  if i in s:
+     d.append(i)
+for i in d:
+  print(i,end="")    
